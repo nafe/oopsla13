@@ -1,3 +1,7 @@
+/*
+ * Kogge Stone inclusive prefix sum in OpenCL
+ */
+
 #define N __LOCAL_SIZE_0
 #define tid get_local_id(0)
 #define other_tid __other_int(tid)
@@ -75,4 +79,7 @@ __kernel void scan(__global int *input, __global int *output) {
   output[tid] = sum[tid];
   __assert(__accessed(output, tid));
 
+#ifdef FORCE_FAIL
+  __assert(false);
+#endif
 }
