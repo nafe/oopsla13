@@ -24,11 +24,11 @@ using the two-thread reduction.
 
 Verify this test with different numbers of threads N, like so:
 
-> gpuverify --time --num_groups=1 --local_size=N kernel.cl
+> gpuverify --time --no-infer --num_groups=1 --local_size=N kernel.cl
 
 For example, to verify with 1024 threads:
 
-> gpuverify --time --num_groups=1 --local_size=1024 kernel.cl
+> gpuverify --time --no-infer --num_groups=1 --local_size=1024 kernel.cl
 
 Expected output will look something like:
 
