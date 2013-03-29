@@ -20,4 +20,8 @@ __kernel void compact(__local uint*out, __local uint*in, __local uint *flag, __l
 
   // (iii) compaction
   if (flag[t]) out[idx[t]] = in[t];
+
+#ifdef FORCE_FAIL
+  __assert(false);
+#endif
 }
