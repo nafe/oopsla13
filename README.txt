@@ -7,7 +7,7 @@ given in our paper.
 
 ---+ PREREQUISITES
 
-You must have the GPUVerify toolchain and on your path.
+You must have the GPUVerify toolchain on your path.
 
 ---+ FILES
 
