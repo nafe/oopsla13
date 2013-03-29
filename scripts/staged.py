@@ -176,7 +176,7 @@ def fname(suffix=None):
 
 def run(cmd):
   if Options.verbose: print ' '.join(cmd)
-  code = subprocess.call(cmd)
+  code = subprocess.call(cmd,shell=(os.name == 'nt'))
   return code
 
 def build_and_run(checks,extraflags=[]):
