@@ -52,6 +52,12 @@ For example, to check verification for 4 threads using 32-bit bitwise-or:
 
 > ../scripts/staged.py --op=or --width=32 4
 
+If running on Windows, it may be better to run the script like this, so that
+the script will run in your current shell:
+
+> python ../scripts/staged.py --op=or --width=32 4
+
+
 Expected output will look something like:
 # stage,                  clang,  opt,    bugle,  vcgen,  boogie, total,  verified
 0004-or-race-biacc-uint,  0.112,  0.016,  0.023,  0.821,  4.145,  5.117,  PASS
