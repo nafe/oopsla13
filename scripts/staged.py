@@ -5,7 +5,6 @@ import subprocess
 import sys
 import os
 
-GPUVERIFY_INSTALL_DIR = os.environ.get('GPUVERIFY_INSTALL_DIR')
 AXIOMS_DIR = 'axioms'
 KERNEL     = 'kernel.cl'
 
@@ -111,8 +110,6 @@ def main(argv=None):
         Options.repeat = int(a)
       except ValueError:
         return error('bad repeat [%s] given' % a)
-  if not GPUVERIFY_INSTALL_DIR:
-    return error('Could not find GPUVERIFY_INSTALL_DIR environment variable')
   if len(args) != 1:
     return error('number of elements not specified')
   try:
@@ -137,7 +134,7 @@ def main(argv=None):
   return 0
 
 def buildcmd(checks,extraflags=[]):
-  cmd = [ GPUVERIFY_INSTALL_DIR + '/gpuverify',
+  cmd = [ 'gpuverify',
           '--silent',
           '--time-as-csv=%s' % fname(),
           '--testsuite',

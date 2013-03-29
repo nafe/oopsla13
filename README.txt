@@ -5,6 +5,10 @@ Data-Dependent GPU Kernels": Additional Supporting Materials
 This directory gives the code and scripts necessary to repeat all experiments
 given in our paper.
 
+---+ PREREQUISITES
+
+You must have the GPUVerify toolchain and on your path.
+
 ---+ FILES
 
 Each directory contains code and a README.txt outlining how to run the experiment.
