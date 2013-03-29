@@ -3,7 +3,7 @@ Verify stream compaction using the prefix sum specification
 
 This experiment demonstrates that GPUVerify can scale to very large thread
 counts using modular verification. We replace the Blelloch prescan
-implementation in the stream compaction kernel (experiments/compact) with its
+implementation in the stream compaction kernel (1-compact) with its
 monotonic specification:
 
   tid < other_tid ==> idx[tid] + flag[tid]) <= idx[other_tid]
