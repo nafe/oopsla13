@@ -11,8 +11,8 @@ monotonic specification:
 ---+ FILES
 
    * kernel.cl
-   contains the stream compaction kernel (from experiments/compact), but
-   with the Blelloch prescan replaced with its monotonic specification.
+   contains the stream compaction kernel (from 1-compact), but with the 
+   Blelloch prescan replaced with its monotonic specification.
 
 ---+ CLAIMS
 
