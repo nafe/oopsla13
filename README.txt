@@ -24,7 +24,8 @@ Each directory contains code and a README.txt outlining how to run the experimen
 
    * 3-blelloch
    Demonstrates that GPUVerify can verify the Blelloch algorithm for its
-   monotonic specification using Barrier Invariants.
+   monotonic specification using Barrier Invariants and a staged verification
+   strategy.
 
    * 4-kogge-stone
    Demonstrates that GPUVerify can verify the Kogge Stone algorithm for its
@@ -33,4 +34,5 @@ Each directory contains code and a README.txt outlining how to run the experimen
 
    * 5-brent-kung
    Demonstrates that GPUVerify can verify the Brent Kung algorithm for its
-   monotonic specification using Barrier Invariants.
+   monotonic specification using Barrier Invariants and a staged verification
+   strategy.

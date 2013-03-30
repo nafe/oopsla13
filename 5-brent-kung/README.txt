@@ -18,7 +18,7 @@ the monotonic specification of the Brent Kung algorithm.
 
 ---+ CLAIMS
 
-In our paper we present two figures for the Blelloch algorithm.
+In our paper we present two figures for the Brent Kung algorithm.
 
    * Figure 9b gives verification results *of the whole algorithm* for different
      numbers of threads using different concrete operators (add, max and
