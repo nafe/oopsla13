@@ -120,6 +120,8 @@ def main(argv=None):
     return error('n must be a power of two')
   if not (2 <= Options.N and Options.N <= 128):
     return error('n must be between 2 and 128')
+  header = [ '# stage','clang','opt','bugle','vcgen','boogie','total','verified' ]
+  print ', '.join(header)
   Options.parts = [PART.UPSWEEP, PART.DOWNSWEEP]
   build_and_run([CHECK.RACE, CHECK.BI_ACCESS])
   checks = [CHECK.BI]
