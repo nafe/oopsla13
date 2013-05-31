@@ -27,12 +27,13 @@ Each directory contains code and a README.txt outlining how to run the experimen
    monotonic specification using Barrier Invariants and a staged verification
    strategy.
 
-   * 4-kogge-stone
+   * 4-brent-kung
+   Demonstrates that GPUVerify can verify the Brent Kung algorithm for its
+   monotonic specification using Barrier Invariants and a staged verification
+   strategy.
+
+   * 5-kogge-stone
    Demonstrates that GPUVerify can verify the Kogge Stone algorithm for its
    prefix sum specification using Barrier Invariants and source-level abstract
    interpretation.
 
-   * 5-brent-kung
-   Demonstrates that GPUVerify can verify the Brent Kung algorithm for its
-   monotonic specification using Barrier Invariants and a staged verification
-   strategy.
